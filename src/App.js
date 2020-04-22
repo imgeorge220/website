@@ -1,26 +1,146 @@
 import React from 'react';
-import logo from './logo.svg';
+import gcgPhoto from './assets/pic-gcg.jpg';
+import resume from './assets/resume.pdf';
+import Footer from './Footer';
+import Carousel from 'react-bootstrap/Carousel'
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="site">
+      <div className="spacer"></div>
+      <img src={gcgPhoto} className="picture" alt="logo" />
+      <div className="spacer"></div>
+      <strong className="header-text">I'm George. A full-stack software<br /> 
+      engineer in San Francisco, California.
+      </strong> 
+      <div className="spacer"></div>
+      <Carousel className="portfolio">
+        <Carousel.Item>
+      <div className="portfolio-item">
+      </div>
+          <Carousel.Caption> 
+            <h3><a 
+              className="portfolio-link" 
+              href={resume}
+              target="_blank"
+              rel="noopener noreferrer">Resume
+            </a></h3>
+            <p className="portfolio-text">Jump Off Campus</p>
+            <p className="portfolio-text">Mueller Associates</p>
+            <p className="portfolio-text">Javascript, Python, SQL, HTML, CSS</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+      <div className="portfolio-item">
+      </div>
+          <Carousel.Caption> 
+            <h3><a
+              className="portfolio-link"
+              href="https://rlin-team.github.io/"
+              target="_blank"
+              rel="noopener noreferrer">rlin
+            </a></h3>
+            <p className="portfolio-text">Mobile app for aiding TBI patients in therapy</p>
+            <p className="portfolio-text">Available on Apple app store</p>
+            <p className="portfolio-text">React-Native, Firebase, Expo</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+      <div className="portfolio-item">
+      </div>
+          <Carousel.Caption> 
+            <h3><a
+              className="portfolio-link"
+              href="https://github.com/imgeorge220/jobly"
+              target="_blank"
+              rel="noopener noreferrer">Jobly
+            </a></h3>
+            <p className="portfolio-text">Full Stack Job board</p>
+            <p className="portfolio-text">Deployed on Heroku</p>
+            <p className="portfolio-text">React, Express, PSQL</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+      </Carousel>
+      <Footer />
     </div>
   );
 }
+
+// function App() {
+//   return (
+//     <div className="site">
+//       <div className="spacer"></div>
+//       <img src={gcgPhoto} className="picture" alt="logo" />
+//       <div className="spacer"></div>
+//       <strong className="header-text">I'm George. A full-stack software<br /> 
+//       engineer in San Francisco, California.
+//       </strong> 
+//       <div className="spacer"></div>
+//       <Carousel className="portfolio">
+//         <Carousel.Item>
+//       <div className="portfolio-item">
+//       </div>
+//           <Carousel.Caption className="portfolio-text"> 
+//             <h3><a 
+//               className="portfolio-link" 
+//               href="https://rlin-team.github.io/"
+//               target="_blank"
+//               rel="noopener noreferrer">Resume
+//             </a></h3>
+//               <p>Jump Off Campus</p>
+//               <p>Mueller Associates</p>
+//             <p>Javascript, Python, SQL, HTML, CSS</p>
+//           </Carousel.Caption>
+//         </Carousel.Item>
+//         <Carousel.Item>
+//       <div className="portfolio-item">
+//       </div>
+//           <Carousel.Caption className="portfolio-text"> 
+//             <h3><a className="portfolio-link" href="https://rlin-team.github.io/">rlin</a></h3>
+//               <p>Mobile app for aiding TBI patients in therapy</p>
+//               <p>Available on Apple app store</p>
+//               <p>React-Native, Firebase, Expo</p>
+//           </Carousel.Caption>
+//         </Carousel.Item>
+//       </Carousel>
+//       <Footer />
+//     </div>
+//   );
+// }
+
+
+{/* <div className="portfolio">
+  <p className="portfolio-item">
+    <a
+      className="portfolio-link"
+      href="https://rlin-team.github.io/"
+      target="_blank"
+      rel="noopener noreferrer">
+      Resume
+          </a>
+          : Long-time Engineer. Recent Software Developer
+        </p>
+  <p className="portfolio-item">
+    <a
+      className="portfolio-link"
+      href="https://rlin-team.github.io/"
+      target="_blank"
+      rel="noopener noreferrer">
+      rlin
+          </a>
+          : React-Native Mobile app for aiding TBI patients in therapy
+        </p>
+  <p className="portfolio-item">
+    <a
+      className="portfolio-link"
+      href="https://rlin-team.github.io/"
+      target="_blank"
+      rel="noopener noreferrer">
+      Jobly
+          </a>
+          : Job board project using React frontend and Node.js API
+        </p>
+</div> */}
 
 export default App;

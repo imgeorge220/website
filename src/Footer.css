@@ -1,0 +1,20 @@
+
+.foot-container {
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: calc(6px + 2vmin);
+}
+
+.footer-link {
+  color: white;
+  /* color: #4a6ee4; */
+}
+
+.logo-link {
+  height: 40px;
+  padding: 5px 5px;
+  /* color: #4a6ee4; */
+}
